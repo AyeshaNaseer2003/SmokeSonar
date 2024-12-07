@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostics Results</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="diagnostics.html" class="active">Diagnostics</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="logout" onclick="window.location.href='index.html'">Logout</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Diagnostics Results Section -->
+    <section id="diagnostics-results" class="results-container">
+        <div class="results-content">
+            <h1>Diagnostics Results</h1>
+            <p>Your car's engine has been analyzed based on the inputs provided.</p>
+
+            <!-- Result Summary -->
+            <div class="result-summary">
+                <h2>Smoke Analysis</h2>
+                <p><strong>Result:</strong> {{ SmokeType }}</p>
+                <p><strong>Details:</strong> {{ SmokeDetails }}</p>
+            </div>
+
+            <div class="result-summary">
+                <h2>Sound Analysis</h2>
+                <p><strong>Result:</strong> {{ SoundResult }}</p>
+                <p><strong>Details:</strong> {{ SoundDetails }}</p>
+            </div>
+
+            <a href="features.html" class="back-button">Upload New Data</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SmokeSonar</h3>
+                <p>Diagnosing your car issues with precision and ease.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="features.html">features</a></li>
+                    <li><a href="diagnostics.html">Diagnostics</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@smokesonar.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmokeSonar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

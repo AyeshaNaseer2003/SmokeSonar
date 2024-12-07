@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+                <li><a href="diagnostics.html">Diagnostics</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="logout" onclick="window.location.href='index.html'">Logout</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features-section">
+        <div class="feature-header">
+            <h1>Our Features</h1>
+            <p>Upload your smoke image and sound data for accurate diagnostics.</p>
+        </div>
+
+        <div class="features-container">
+            <!-- Smoke Image Feature -->
+            <div class="feature-card">
+                <i class="fas fa-camera feature-icon"></i>
+                <h2>Smoke Image</h2>
+                <p>Upload a clear image of the smoke coming from your car exhaust for diagnosis.</p>
+                <form>
+                    <label for="smoke-image" class="upload-label">Upload Image:</label>
+                    <input type="file" id="smoke-image" name="smoke-image" accept="image/*" required>
+                </form>
+            </div>
+
+            <!-- Sound Data Feature -->
+            <div class="feature-card">
+                <i class="fas fa-microphone feature-icon"></i>
+                <h2>Sound Data</h2>
+                <p>Upload an audio recording of your engine knocking sound for analysis.</p>
+                <form>
+                    <label for="sound-data" class="upload-label">Upload Sound:</label>
+                    <input type="file" id="sound-data" name="sound-data" accept="audio/*" required>
+                </form>
+            </div>
+        </div>
+
+        <div class="submit-container">
+            <button type="submit" class="submit-button" onclick="window.location.href='diagnostics.html'" style="margin-top: 50px; margin-bottom: 80px;">Submit Data</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SmokeSonar</h3>
+                <p>Diagnosing your car issues with precision and ease.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="features.html">features</a></li>
+                    <li><a href="diagnostics.html">Diagnostics</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@smokesonar.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmokeSonar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
